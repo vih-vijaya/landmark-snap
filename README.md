@@ -43,35 +43,23 @@
 
 ### 1. Clone the Repo
 
-```bash
 git clone https://github.com/vih-vijaya/landmark-snap.git
 cd landmark-snap
+
 2. Backend Setup (Django)
-bash
-Copy
-Edit
 cd backend
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 touch .env
 ✏️ .env file should include:
-env
-Copy
-Edit
 OPENAI_API_KEY=your-key
 GOOGLE_MAPS_API_KEY=your-key
 Then run:
-
-bash
-Copy
-Edit
 python manage.py migrate
 python manage.py runserver
+
 3. Frontend Setup (React)
-bash
-Copy
-Edit
 cd ../frontend
 npm install
 npm run dev
@@ -80,9 +68,6 @@ Visit: http://localhost:5173
 Make sure to update your API URL inside App.jsx to match your local or production backend.
 
 🧪 Sample API Response
-json
-Copy
-Edit
 {
   "predicted_place": "Taj Mahal",
   "caption": "The Taj Mahal is a breathtaking white marble mausoleum renowned for its iconic dome and romantic symbolism.",
@@ -133,15 +118,9 @@ backend.yml: Deploys Django app to Azure Web App using a zipped package and publ
 🧑‍💻 Author
 Vijayalakshmi
 🧠 Machine Learning + Full Stack Developer
-🔗 LinkedIn | 🌐 Portfolio
 
 📄 License
 This project is licensed under the MIT License.
-
-yaml
-Copy
-Edit
-
 ---
 
 Let me know if you'd like:
